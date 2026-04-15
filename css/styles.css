@@ -92,7 +92,7 @@ section { scroll-margin-top: 44px; }
 .hero-text .line-2 { color: #2484C3; }
 .hero-text .line-3 { color: #f4fafa; }
 .hero-text .line-4 { color: #6e8291; }
-.hero-text .line-indent { padding-left: 2em; }
+.hero-text .line-indent { padding-left: 3.25em; }
 
 .hero-graphic {
   flex: 0 0 580px; max-width: 580px;
@@ -217,12 +217,12 @@ section { scroll-margin-top: 44px; }
   border-radius: 10px;
   padding: 28px;
   min-height: 200px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 25px; font-family: 'Poppins', sans-serif;
-  text-align: center;
+  display: flex; align-items: center; justify-content: left;
+  font-size: 20px; font-family: 'Poppins', sans-serif;
+  text-align: left;
 }
 .section-description.on-dark {
-  color: #6e8291;
+  color: #2484C3;
 }
 .section-description.on-light {
   color: #2484C3;
@@ -239,6 +239,11 @@ section { scroll-margin-top: 44px; }
 #data-access-control .section-label { color: #2484C3; }
 #ip-protection .section-label { color: #6e8291; }
 #data-compliance .section-label { color: #f4fafa; }
+
+/* ── SECTION DESCRIPTION COLORS (match section-label) ── */
+#privacy-by-design .section-description { color: #6BC9ED; }
+#ip-protection .section-description { color: #6e8291; }
+#data-compliance .section-description { color: #f4fafa; }
 
 /* ── ACCESSIBILITY ── */
 .sr-only {
@@ -297,11 +302,15 @@ footer {
   .hero-text .line { font-size: 40px; }
   .hero-graphic { flex: none; width: 100%; max-width: 100%; }
   .cta-btn { font-size: 28px; }
+  #canvas-wrap { min-height: auto; }
 
   .content-section { padding: 60px 24px; }
-  .section-label { font-size: 32px; }
-  .section-body, .section-body.reverse { flex-direction: column; }
+  .section-label { font-size: 32px; margin-bottom: 32px; }
+  .section-body, .section-body.reverse { flex-direction: column; align-items: stretch; gap: 24px; }
   .section-graphic { flex: none; width: 100%; max-width: 100%; height: 200px; }
+  .section-graphic.canvas-graphic { height: auto; }
+  #pbd-wrap, #dac5-wrap, #ipe-wrap, #dc-wrap { min-height: auto; }
+  .section-description { min-height: auto; font-size: 17px; padding: 20px; }
 
   footer { padding: 40px 20px 24px; }
   .footer-table td { font-size: 18px; padding: 6px 8px; }
@@ -312,6 +321,8 @@ footer {
   .hero-text .line { font-size: 28px; }
   .cta-btn { font-size: 20px; }
   .section-label { font-size: 26px; }
+  .section-description { font-size: 15px; padding: 14px; }
+  .content-section { padding: 48px 16px; }
   .footer-table { display: block; }
   .footer-table tbody, .footer-table tr { display: block; }
   .footer-table td { display: block; text-align: center; font-size: 16px; }

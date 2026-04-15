@@ -23,10 +23,10 @@
   let t = 0;
 
   const LAYERS = [
-    { label: 'Data Layer',      color: C.privacy, depth: 0 },
+    { label: 'Interface Layer', color: C.privacy,     depth: 0 },
     { label: 'Logic Layer',     color: C.blue,    depth: 1 },
     { label: 'Access Layer',    color: C.slate,   depth: 2 },
-    { label: 'Interface Layer', color: C.ink,     depth: 3 },
+    { label: 'Data Layer',      color: C.ink, depth: 3 },
   ];
 
   const PULSES = Array.from({length: 18}, (_, i) => ({
@@ -43,7 +43,7 @@
     const topY = h * 0.12;
     const lh = totalH / 4;
     const perspective = layerIdx * 10;
-    const lw = w * 0.72 - perspective * 1.5;
+    const lw = w * 0.60 - perspective * 1.5;
     const lx = w * 0.14 + perspective * 0.75;
     const ly = topY + layerIdx * lh;
     return { lx, ly, lw, lh };
