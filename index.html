@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FISE Technologies – Cloud Data Privacy Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-brand">
+    <a href="#top"><img src="images/FISE-logo.svg" alt="FISE Technologies logo" class="logo"></a>
+    <div class="brand-name">Signet</div>
+  </div>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#privacy-by-design">Privacy-By-Design</a></li>
+      <li><a href="#data-access-control">Data Access Control</a></li>
+      <li><a href="#ip-protection">IP Protection</a></li>
+      <li><a href="#data-compliance">Data Compliance</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#privacy-by-design" onclick="closeMenu()">Privacy-By-Design</a>
+  <a href="#data-access-control" onclick="closeMenu()">Data Access Control</a>
+  <a href="#ip-protection" onclick="closeMenu()">IP Protection</a>
+  <a href="#data-compliance" onclick="closeMenu()">Data Compliance</a>
+</div>
+
+<!-- SECTION 1: HERO -->
+<section id="top">
+  <div class="hero-container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="line line-1">Cloud Data</span>
+        <span class="line line-1 line-indent">Privacy</span>
+        <span class="line line-2 line-indent">Security</span>
+        <span class="line line-3 line-indent">Ownership</span>
+        <span class="line line-4 line-indent">Control</span>
+      </div>
+      <div class="hero-graphic dark">
+        <h2 class="sr-only">Animated graphic depicting cloud data privacy, security, ownership, and control</h2>
+        <div id="canvas-wrap"><canvas id="c"></canvas></div>
+        <script src="js/hero-animation.js"></script>
+      </div>
+    </div>
+    <div class="hero-cta-wrap">
+      <a href="#" class="cta-btn">Secure Your Data</a>
+    </div>
+    <div class="hero-spacer"></div>
+  </div>
+</section>
+
+<!-- SECTION 2: PRIVACY BY DESIGN -->
+<section id="privacy-by-design" class="content-section">
+  <div class="section-label">Privacy By Design</div>
+  <div class="section-body">
+    <div class="section-graphic light canvas-graphic">
+      <h2 class="sr-only">Animated graphic conveying Privacy By Design — privacy built into the foundation of a system</h2>
+      <div id="pbd-wrap"><canvas id="pbdc"></canvas></div>
+      <script src="js/privacy-animation.js"></script>
+    </div>
+    <div class="section-description on-light">
+      Privacy is a rare luxury in an increasingly digitized world. To address the need for cloud data privacy, we built into the foundation privacy defaults for personally identifiable data at every level of interaction, from registration to data upload, encryption, file sharing, and downloading.
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: DATA ACCESS CONTROL -->
+<section id="data-access-control" class="content-section">
+  <div class="section-label">Data Access Control</div>
+  <div class="section-body">
+    <div class="section-graphic dark canvas-graphic">
+      <h2 class="sr-only">Authorized user inside a protective circle sending keys to vaults, while attackers try and fail to breach the vaults directly</h2>
+      <div id="dac5-wrap"><canvas id="dac5c"></canvas></div>
+      <script src="js/data-access-animation.js"></script>
+    </div>
+    <div class="section-description on-dark">
+      Ensuring your sensitive, high-value files are encrypted and secured with permissions are standard procedure with Signet. We embedded granular data access control as a core native-security prevention mechanism for Signet users when storing data in the cloud and file sharing.<br><br>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: IP PROTECTION -->
+<section id="ip-protection" class="content-section">
+  <div class="section-label">IP Protection</div>
+  <div class="section-body">
+    <div class="section-graphic light canvas-graphic">
+      <h2 class="sr-only">Animated graphic showing intellectual property protected by encryption — unscrapable, unbreachable, unstealable, unscannable</h2>
+      <div id="ipe-wrap"><canvas id="ipec"></canvas></div>
+      <script src="js/ip-protection-animation.js"></script>
+    </div>
+    <div class="section-description on-light">
+      Protecting your original designs, ideas, and authored content from digital threats such as data breaches, scraping, crawling, scanning, and stealing come standard on Signet. When you encrypt your intellectual property files on Signet, only you have the keys and authorization to unlock the files.
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: DATA COMPLIANCE -->
+<section id="data-compliance" class="content-section">
+  <div class="section-label">Data Compliance</div>
+  <div class="section-body">
+    <div class="section-graphic dark canvas-graphic">
+      <h2 class="sr-only">Animated graphic conveying Data Compliance — GDPR standards covering security, permissions, authorized users, privacy, and ownership</h2>
+      <div id="dc-wrap"><canvas id="dcc"></canvas></div>
+      <script src="js/compliance-animation.js"></script>
+    </div>
+    <div class="section-description on-dark">
+      We embrace the gold standard of data compliance enforced by the General Data Protection Regulation (GDPR). Thoughtfully designed, Signet facilitates data ownership, security, privacy, authorization, and permissions, engineered into the architecture of users’ data interactions in the cloud for storing, encrypting, sharing, and decrypting data.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <table class="footer-table">
+    <tbody>
+      <tr>
+        <td>
+          <a href="mailto:info@fisetech.ai">Contact</a>
+        </td>
+        <td>
+          <a href="https://signal.group/#CjQKIOlWOxmbP_WX2BIpJJIYTWRz8FgxER5dDlxbqYB74MVIEhBsjHSlO1lBRhwyC4eEPqJW">Signal</a>
+        </td>
+        <td>
+          <a href="privacy-policy-April2026.html" target="_blank">Privacy Policy</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://www.fisetech.ai/#about">Team</a>
+        </td>
+        <td>
+          <a href="https://bsky.app/profile/fisetech.bsky.social">BlueSky</a>
+        </td>
+        <td>
+          <a href="terms-of-service-April-2026.html" target="_blank">Terms &amp; Conditions</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer-copyright">
+    &copy; <span id="copyright-year"></span> FISE Technologies, Inc. All Rights Reserved.
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
