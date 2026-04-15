@@ -291,6 +291,19 @@ footer {
   padding-top: 24px;
 }
 
+/* ── LARGE SCREEN HERO ── */
+@media (min-width: 901px) {
+  #top {
+    height: 100vh;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-container {
+    flex: 1;
+  }
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .nav-links { display: none; }
