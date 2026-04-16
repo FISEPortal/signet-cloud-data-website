@@ -42,9 +42,8 @@
     const totalH = h * 0.62;
     const topY = h * 0.12;
     const lh = totalH / 4;
-    const perspective = layerIdx * 10;
-    const lw = w * 0.60 - perspective * 1.5;
-    const lx = w * 0.14 + perspective * 0.75;
+    const lw = w * 0.60;
+    const lx = w * 0.14;
     const ly = topY + layerIdx * lh;
     return { lx, ly, lw, lh };
   }
@@ -200,6 +199,8 @@
   }
 
   function drawFoundationLabel(w, h, time) {
+    const { lx, lw } = layerRect(0, w, h);
+    const fx = lx + lw / 2;
     const fy = h * 0.12 + h * 0.62 + 28;
     cx.save();
     cx.globalAlpha = (0.7 + 0.3 * Math.sin(time * 0.8)) * 0.9;
@@ -207,7 +208,7 @@
     cx.textAlign = 'center';
     cx.textBaseline = 'top';
     cx.fillStyle = C.privacy;
-    cx.fillText('Privacy Built Into Every Layer', w / 2, fy);
+    cx.fillText('Privacy Built Into Every Layer', fx, fy);
     cx.restore();
   }
 
