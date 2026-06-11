@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How Signet works — sovereign identity, smart-contract data economics, and legal co-enforcement explained.">
+<title>How It Works — Signet by FISE Technologies</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <img src="images/FISE-logo.svg" alt="FISE" class="nav-logo">
+    <div class="nav-brand-text">
+      <span class="nav-signet">Signet</span>
+      <span class="nav-by">by FISE Technologies</span>
+    </div>
+  </a>
+  <a href="index.html" class="nav-back">← Back to Signet</a>
+  <a href="mailto:info@fisetech.ai" class="nav-cta">Contact Us</a>
+</nav>
+
+<!-- PAGE HEADER -->
+<section style="background: var(--c-bg);">
+  <div class="page-header">
+    <p class="page-eyebrow">Architecture · Scenarios · Technology</p>
+    <h1 class="page-headline">How <em>Signet</em> works.</h1>
+    <p class="page-sub">Most privacy tools explain policy. Our protocol is proof of policy. Here is the architecture.</p>
+  </div>
+</section>
+
+<!-- LAYER 1: ARCHITECTURE -->
+<section class="architecture" id="architecture">
+  <div class="architecture-inner">
+    <p class="arch-eyebrow">Architecture Overview</p>
+    <h2 class="arch-title">The <em>protocol stack</em> that puts you in control.</h2>
+
+    <!-- Stack Diagram -->
+    <div class="stack-diagram">
+
+      <div class="stack-layer top">
+        <div class="stack-num">Enforcement</div>
+        <div class="stack-label"><em>Legal Co-Enforcement</em></div>
+        <div class="stack-desc">NFT-anchored provenance · Co-plaintiff standing · Enforceable violation cases</div>
+      </div>
+
+      <div class="stack-layer top">
+        <div class="stack-num">Economics</div>
+        <div class="stack-label"><em>Smart-Contract Data Economics</em></div>
+        <div class="stack-desc">70/30 human-first revenue · Automated settlement · Terminating data lifecycles</div>
+      </div>
+
+      <div class="stack-layer top">
+        <div class="stack-num">Identity</div>
+        <div class="stack-label"><em>Sovereign Digital Identity</em></div>
+        <div class="stack-desc">Human master DID · AI agent governance · BCI and Neurotech device control</div>
+      </div>
+
+      <div class="stack-layer top">
+        <div class="stack-num">Encryption</div>
+        <div class="stack-label"><em>AES-256 End-to-End Encryption</em></div>
+        <div class="stack-desc">Client-side key generation · Zero platform access · IPFS decentralized storage</div>
+      </div>
+
+    </div>
+
+    <!-- Architecture detail -->
+    <div class="arch-visual">
+      <div class="arch-visual-text">
+        <h3>Built from the ground up, not bolted on.</h3>
+        <p>Every other privacy solution you have encountered was designed after the infrastructure was built. It sits on top of an extraction model and tries to limit the damage. <strong>Signet inverts this entirely.</strong></p>
+        <p>The encryption layer ensures your data is mathematically inaccessible to anyone without your explicit authorization, including Signet itself. The identity layer gives you a sovereign DID that governs every agent, device, and sensor connected to you. The economics layer encodes your data rights into smart contracts that settle automatically. The enforcement layer creates a legally provable chain of custody from the moment of NFT creation.</p>
+        <p>Each layer is dependent on the one beneath it. <strong>Remove any layer and the system fails.</strong> That interdependence is the architecture. That is why nothing else is building this at the protocol level.</p>
+      </div>
+      <div class="arch-svg-wrap">
+        <!-- Protocol stack SVG visualization -->
+        <svg viewBox="0 0 340 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:340px;">
+          <!-- Layer 0 - Encryption base -->
+          <rect x="20" y="310" width="300" height="72" rx="2" fill="rgba(107,201,237,0.1)" stroke="rgba(107,201,237,0.5)" stroke-width="0.8"/>
+          <text x="40" y="336" font-family="DM Sans,sans-serif" font-size="7" letter-spacing="2" fill="rgba(107,201,237,0.75)" font-weight="500">ENCRYPTION</text>
+          <text x="40" y="356" font-family="Cormorant Garamond,serif" font-size="14" font-style="italic" fill="#6BC9ED">AES-256 Encryption</text>
+          <text x="40" y="372" font-family="DM Sans,sans-serif" font-size="7.5" fill="rgba(107,201,237,0.5)">Client-side · Zero platform access · IPFS</text>
+          <!-- Lock icon -->
+          <rect x="276" y="330" width="18" height="14" rx="1.5" stroke="rgba(107,201,237,0.6)" stroke-width="0.7"/>
+          <path d="M280 330v-4a5 5 0 0110 0v4" stroke="rgba(107,201,237,0.6)" stroke-width="0.7" stroke-linecap="round"/>
+          <circle cx="285" cy="337" r="2" fill="rgba(107,201,237,0.6)"/>
+
+          <!-- Layer 1 - Identity -->
+          <rect x="20" y="222" width="300" height="72" rx="2" fill="rgba(107,201,237,0.1)" stroke="rgba(107,201,237,0.5)" stroke-width="0.8"/>
+          <text x="40" y="248" font-family="DM Sans,sans-serif" font-size="7" letter-spacing="2" fill="rgba(107,201,237,0.75)" font-weight="500">IDENTITY</text>
+          <text x="40" y="268" font-family="Cormorant Garamond,serif" font-size="14" font-style="italic" fill="#6BC9ED">Sovereign Identity</text>
+          <text x="40" y="284" font-family="DM Sans,sans-serif" font-size="7.5" fill="rgba(107,201,237,0.5)">Human DID · AI agents · BCI devices</text>
+          <!-- DID icon -->
+          <circle cx="285" cy="255" r="9" stroke="rgba(107,201,237,0.6)" stroke-width="0.7"/>
+          <circle cx="285" cy="252" r="3.5" stroke="rgba(107,201,237,0.6)" stroke-width="0.6"/>
+          <path d="M278 264c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="rgba(107,201,237,0.6)" stroke-width="0.6" stroke-linecap="round"/>
+
+          <!-- Layer 2 - Economics -->
+          <rect x="20" y="134" width="300" height="72" rx="2" fill="rgba(107,201,237,0.1)" stroke="rgba(107,201,237,0.5)" stroke-width="0.8"/>
+          <text x="40" y="160" font-family="DM Sans,sans-serif" font-size="7" letter-spacing="2" fill="rgba(107,201,237,0.75)" font-weight="500">ECONOMICS</text>
+          <text x="40" y="180" font-family="Cormorant Garamond,serif" font-size="14" font-style="italic" fill="#6BC9ED">Data Economics</text>
+          <text x="40" y="196" font-family="DM Sans,sans-serif" font-size="7.5" fill="rgba(107,201,237,0.5)">70/30 model · Smart contracts · Auto-settlement</text>
+          <!-- % icon -->
+          <text x="278" y="172" font-family="Cormorant Garamond,serif" font-size="22" fill="rgba(107,201,237,0.6)" font-weight="300">70</text>
+          <text x="278" y="186" font-family="DM Sans,sans-serif" font-size="7" fill="rgba(107,201,237,0.5)" letter-spacing="1">%</text>
+
+          <!-- Layer 3 - Enforcement (top) -->
+          <rect x="20" y="46" width="300" height="72" rx="2" fill="rgba(107,201,237,0.1)" stroke="rgba(107,201,237,0.5)" stroke-width="0.8"/>
+          <text x="40" y="72" font-family="DM Sans,sans-serif" font-size="7" letter-spacing="2" fill="rgba(107,201,237,0.75)" font-weight="500">ENFORCEMENT</text>
+          <text x="40" y="92" font-family="Cormorant Garamond,serif" font-size="14" font-style="italic" fill="#6BC9ED">Legal Co-Enforcement</text>
+          <text x="40" y="108" font-family="DM Sans,sans-serif" font-size="7.5" fill="rgba(107,201,237,0.5)">NFT provenance · Co-plaintiff · Enforceable</text>
+          <!-- Gavel icon -->
+          <path d="M278 60 L294 76" stroke="rgba(107,201,237,0.6)" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M276 72 L288 60" stroke="rgba(107,201,237,0.6)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="275" y1="80" x2="286" y2="80" stroke="rgba(107,201,237,0.4)" stroke-width="1" stroke-linecap="round"/>
+
+          <!-- Connecting lines between layers -->
+          <line x1="170" y1="118" x2="170" y2="134" stroke="rgba(107,201,237,0.2)" stroke-width="0.5" stroke-dasharray="2 2"/>
+          <line x1="170" y1="206" x2="170" y2="222" stroke="rgba(107,201,237,0.2)" stroke-width="0.5" stroke-dasharray="2 2"/>
+          <line x1="170" y1="294" x2="170" y2="310" stroke="rgba(107,201,237,0.2)" stroke-width="0.5" stroke-dasharray="2 2"/>
+
+          <!-- Human at top -->
+          <circle cx="170" cy="22" r="14" stroke="rgba(107,201,237,0.35)" stroke-width="0.7"/>
+          <circle cx="170" cy="18" r="5" stroke="rgba(107,201,237,0.5)" stroke-width="0.6"/>
+          <path d="M160 30c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="rgba(107,201,237,0.5)" stroke-width="0.6" stroke-linecap="round"/>
+          <text x="170" y="396" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="7" letter-spacing="2" fill="rgba(107,201,237,0.35)">PROTOCOL FOUNDATION</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 2: SCENARIOS -->
+<section class="scenarios" id="scenarios">
+  <div class="scenarios-inner">
+    <p class="scen-eyebrow">How It Works in Practice</p>
+    <h2 class="scen-title">Real scenarios.<br><em>Your data.</em> Your terms.</h2>
+
+    <div class="scenario-list">
+
+      <!-- Scenario 1: BCI User -->
+      <div class="scenario">
+        <div class="scenario-left">
+          <span class="scenario-tag">Neurotech · BCI</span>
+          <div class="scenario-who">A BCI user whose neural data is governed by Signet.</div>
+        </div>
+        <div class="scenario-right">
+          <div class="scenario-steps">
+            <div class="step">
+              <span class="step-num">1.</span>
+              <span class="step-text">You connect your BCI device to Signet. A <strong>sovereign DID is created for the device</strong>, linked to your master human identity. You are now the controller of the device's data output, not the manufacturer.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">2.</span>
+              <span class="step-text">Every neural recording is <strong>encrypted client-side with your keys</strong> before it leaves your device. It is stored on IPFS as a registered, uniquely identified asset. No platform, including Signet, can read it.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">3.</span>
+              <span class="step-text">A research institution wants access to anonymized cognitive data. Their AI agent negotiates with yours. <strong>You set the terms, the price, and the permitted use.</strong> A smart contract encodes the agreement and settles automatically, returning 70% of the transaction to you.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">4.</span>
+              <span class="step-text">If the institution shares or resells the data outside agreed terms, the NFT provenance chain creates an open-and-shut case. <strong>FISE stands beside you as co-plaintiff.</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scenario 2: Researcher / Data Buyer -->
+      <div class="scenario">
+        <div class="scenario-left">
+          <span class="scenario-tag">Biotech · Research</span>
+          <div class="scenario-who">A pharmaceutical researcher buying consented genomic data.</div>
+        </div>
+        <div class="scenario-right">
+          <div class="scenario-steps">
+            <div class="step">
+              <span class="step-num">1.</span>
+              <span class="step-text">Your institution needs a cohort of consented genomic data for a clinical trial. You post a <strong>data request with specific parameters</strong> — data type, anonymization level, permitted use, and price ceiling.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">2.</span>
+              <span class="step-text">Signet surfaces matching data assets whose owners have pre-authorized this category of use. <strong>No cold outreach. No consent ambiguity.</strong> Every asset comes with a cryptographically verified consent record.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">3.</span>
+              <span class="step-text">A smart contract is executed. The data is <strong>delivered with a legally enforceable single-use license</strong> and an automatic expiration tied to the agreed terms. Revenue settles directly to data owners at 70/30.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">4.</span>
+              <span class="step-text">Your institution receives a <strong>full chain-of-custody provenance record</strong> for every data asset, defensible in regulatory audit, peer review, and litigation.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scenario 3: Enterprise AI -->
+      <div class="scenario">
+        <div class="scenario-left">
+          <span class="scenario-tag">Enterprise · Agentic AI</span>
+          <div class="scenario-who">An enterprise deploying AI agents under human-sovereign governance.</div>
+        </div>
+        <div class="scenario-right">
+          <div class="scenario-steps">
+            <div class="step">
+              <span class="step-num">1.</span>
+              <span class="step-text">Your enterprise deploys agentic AI across operations. Each AI agent is <strong>issued a child DID linked to a human master DID</strong>, meaning every agent action is cryptographically traceable to an authorized human principal.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">2.</span>
+              <span class="step-text">Agent permissions are encoded in smart contracts. <strong>What the agent can access, negotiate, and act on</strong> is defined and immutable without explicit human override. No agent operates outside its permissioned scope.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">3.</span>
+              <span class="step-text">Regulatory audit requests produce a <strong>complete, tamper-proof action log</strong> for every AI agent in your ecosystem, with human authorization records attached to every decision. Compliance is architectural, not procedural.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scenario 4: Creator / IP -->
+      <div class="scenario">
+        <div class="scenario-left">
+          <span class="scenario-tag">Creative · IP</span>
+          <div class="scenario-who">A creator protecting original work from AI scraping.</div>
+        </div>
+        <div class="scenario-right">
+          <div class="scenario-steps">
+            <div class="step">
+              <span class="step-num">1.</span>
+              <span class="step-text">You upload original designs, written work, or source code to Signet. The file is <strong>encrypted client-side and minted as an NFT with smart contract protections</strong>, timestamping your authorship on the blockchain at the moment of creation.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">2.</span>
+              <span class="step-text">The encrypted file is <strong>mathematically inaccessible to any AI training pipeline, crawler, or scraper.</strong> It cannot be read, copied, or reproduced without your explicit decryption authorization.</span>
+            </div>
+            <div class="step">
+              <span class="step-num">3.</span>
+              <span class="step-text">If you choose to license your work, <strong>terms are encoded in the smart contract</strong> — permitted use, duration, territory, and price. Any use outside those terms is a provable violation, with FISE as your legal co-enforcer.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LAYER 3: TECHNOLOGY -->
+<section class="technology" id="technology">
+  <div class="technology-inner">
+    <p class="tech-eyebrow">The Technology</p>
+    <h2 class="tech-title">For the <em>technical reader.</em></h2>
+
+    <div class="tech-grid">
+      <div class="tech-cell">
+        <span class="tech-cell-label">Encryption</span>
+        <div class="tech-cell-title">AES-256 Client-Side Encryption</div>
+        <p class="tech-cell-body">All encryption and decryption occurs on the client device before data transits to storage. <strong>Keys are generated and held exclusively by the user</strong>, never transmitted to or stored by Signet. Files are stored in encrypted form on IPFS, a decentralized content-addressed storage network, eliminating single points of failure and platform-controlled access.</p>
+      </div>
+
+      <div class="tech-cell">
+        <span class="tech-cell-label">Identity</span>
+        <div class="tech-cell-title">Decentralized Identifier (DID) Architecture</div>
+        <p class="tech-cell-body">Each user is issued a <strong>W3C-compliant Human Controller DID</strong> that they control entirely. Child DIDs are delegated to AI agents, BCI devices, and Neurotech sensors, creating a hierarchical sovereignty architecture. No identity data is stored on a centralized server. DID resolution is open and interoperable across Web2 and Web3 systems.</p>
+      </div>
+
+      <div class="tech-cell">
+        <span class="tech-cell-label">Ownership</span>
+        <div class="tech-cell-title">NFT-Anchored Data Provenance</div>
+        <p class="tech-cell-body">Each data asset is minted as an <strong>ERC-721 NFT on Polygon</strong>, creating an immutable, timestamped record of authorship, ownership, and transaction history. Smart contracts encode permitted use cases, data lifecycles, and revenue distribution. The NFT chain-of-custody record is legally admissible as provenance evidence in commercial and regulatory contexts.</p>
+      </div>
+
+      <div class="tech-cell">
+        <span class="tech-cell-label">Compliance</span>
+        <div class="tech-cell-title">Privacy-By-Design, GDPR-Aligned</div>
+        <p class="tech-cell-body">Signet is engineered around the GDPR's privacy-by-design mandate and extends compliance to neural, biometric, and genomic data types not yet fully covered by existing frameworks. <strong>Data minimization, purpose limitation, and explicit consent</strong> are architectural constraints, not policy overlays. Neurorights-aligned across Colorado, California, Montana, and Connecticut legislation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <p class="cta-eyebrow">Ready to go deeper?</p>
+    <h2 class="cta-title">Your data.<br><em>Your sovereignty.</em></h2>
+    <p class="cta-sub">Whether you are evaluating Signet for personal data protection, enterprise deployment, or investment, we are ready to have a real conversation.</p>
+    <div class="cta-actions">
+      <a href="mailto:info@fisetech.ai" class="btn-light">Get in Touch</a>
+      <div class="cta-links">
+        <a href="team.html" class="btn-outline">Team</a>
+        <a href="useCases.html" class="btn-outline">Use Cases</a>
+        <a href="signet-how-it-works.html" class="btn-outline">How It Works</a>
+        <a href="https://www.linkedin.com/company/fise-technologies" class="btn-outline">LinkedIn</a>
+        <a href="https://bsky.app/profile/fisetech.bsky.social" class="btn-outline">Bluesky</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-brand">
+    <img src="images/FISE-logo.svg" alt="FISE" class="footer-logo">
+    <div class="footer-brand-text">
+      <span class="footer-signet">Signet</span>
+      <span class="footer-by">by FISE Technologies</span>
+    </div>
+  </a>
+  <div class="footer-center">
+    <div class="footer-legal">
+      <a href="https://www.signetapp.cloud/privacy-policy-May2026.html" class="footer-legal-link">Privacy Policy</a>
+      <span class="footer-legal-sep">·</span>
+      <a href="https://www.signetapp.cloud/terms-conditions-May2026.html" class="footer-legal-link">Terms &amp; Conditions</a>
+    </div>
+    <div class="footer-copy">© <span id="footer-year"></span> FISE Technologies, Inc. All Rights Reserved.</div>
+  </div>
+  <div style="opacity:0;pointer-events:none;font-size:0.65rem;">spacer</div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

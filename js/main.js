@@ -1,14 +1,20 @@
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
+const copyrightEl = document.getElementById('copyright-year');
+if (copyrightEl) copyrightEl.textContent = currentYear;
+const footerYearEl = document.getElementById('footer-year');
+if (footerYearEl) footerYearEl.textContent = currentYear;
 
 const btn = document.getElementById('hamburgerBtn');
 const menu = document.getElementById('mobileMenu');
 
-btn.addEventListener('click', () => {
-  menu.classList.toggle('open');
-});
+if (btn && menu) {
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+}
 
 function closeMenu() {
-  menu.classList.remove('open');
+  if (menu) menu.classList.remove('open');
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(a => {
