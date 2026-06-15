@@ -4,17 +4,20 @@ if (copyrightEl) copyrightEl.textContent = currentYear;
 const footerYearEl = document.getElementById('footer-year');
 if (footerYearEl) footerYearEl.textContent = currentYear;
 
-const btn = document.getElementById('hamburgerBtn');
-const menu = document.getElementById('mobileMenu');
+const hamburger = document.querySelector('.nav-hamburger');
+const navEl = document.querySelector('nav');
 
-if (btn && menu) {
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('open');
+if (hamburger && navEl) {
+  hamburger.addEventListener('click', () => {
+    const open = navEl.classList.toggle('nav-open');
+    hamburger.setAttribute('aria-expanded', open);
   });
-}
-
-function closeMenu() {
-  if (menu) menu.classList.remove('open');
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navEl.classList.remove('nav-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(a => {
