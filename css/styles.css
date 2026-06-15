@@ -1456,6 +1456,7 @@ footer {
   .usecase-item:nth-child(4) { border-top: 1px solid var(--c-border-lg); border-right: none; }
   .cta-section { padding: 5rem 1.5rem 3rem; }
   footer { flex-direction: column; gap: 1.5rem; text-align: center; padding: 2.5rem 1.5rem; }
+  .footer-center { position: static; transform: none; }
   .footer-links { gap: 1.2rem; }
 
   /* Use cases page */
