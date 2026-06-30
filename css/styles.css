@@ -1443,7 +1443,7 @@ footer {
   /* Index hero */
   .hero { padding: 8rem 1.5rem 4rem; }
   .hero-graphic { flex-direction: column; gap: 2rem; }
-  .hero-pillars { flex-wrap: wrap; gap: 2rem; }
+  .hero-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; }
 
   /* Shared sections */
   .section-inner { padding: 5rem 1.5rem; }
