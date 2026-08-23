@@ -1,4 +1,54 @@
 {
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "signetapp.cloud" }],
+      "destination": "/signet.html",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.signetapp.cloud" }],
+      "destination": "/signet.html",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "fisetech.ai" }],
+      "destination": "/signet.html",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.fisetech.ai" }],
+      "destination": "/signet.html",
+      "permanent": false
+    },
+    {
+      "source": "/index.html",
+      "has": [{ "type": "host", "value": "signetapp.cloud" }],
+      "destination": "/signet.html",
+      "permanent": false
+    },
+    {
+      "source": "/index.html",
+      "has": [{ "type": "host", "value": "www.signetapp.cloud" }],
+      "destination": "/signet.html",
+      "permanent": false
+    },
+    {
+      "source": "/index.html",
+      "has": [{ "type": "host", "value": "fisetech.ai" }],
+      "destination": "/signet.html",
+      "permanent": false
+    },
+    {
+      "source": "/index.html",
+      "has": [{ "type": "host", "value": "www.fisetech.ai" }],
+      "destination": "/signet.html",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/",

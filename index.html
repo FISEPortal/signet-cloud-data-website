@@ -2,6 +2,14 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
+    <script>
+        (function () {
+            var signetHosts = ['signetapp.cloud', 'www.signetapp.cloud', 'fisetech.ai', 'www.fisetech.ai'];
+            if (signetHosts.indexOf(window.location.hostname) !== -1 && !window.location.pathname.endsWith('/signet.html')) {
+                window.location.replace('/signet.html' + window.location.search + window.location.hash);
+            }
+        }());
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FISE Technologies | BCI Neural Data Governance Solutions</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
