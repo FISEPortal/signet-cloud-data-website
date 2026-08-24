@@ -1,50 +1,134 @@
 {
   "redirects": [
     {
+      "source": "/team.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "fise.tech"
+        }
+      ],
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/useCases.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "fise.tech"
+        }
+      ],
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/team.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fise.tech"
+        }
+      ],
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/useCases.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fise.tech"
+        }
+      ],
+      "destination": "/",
+      "permanent": false
+    },
+    {
       "source": "/",
-      "has": [{ "type": "host", "value": "signetapp.cloud" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "signetapp.cloud"
+        }
+      ],
       "destination": "/signet.html",
       "permanent": false
     },
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "www.signetapp.cloud" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.signetapp.cloud"
+        }
+      ],
       "destination": "/signet.html",
       "permanent": false
     },
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "fisetech.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "fisetech.ai"
+        }
+      ],
       "destination": "/signet.html",
       "permanent": false
     },
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "www.fisetech.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fisetech.ai"
+        }
+      ],
       "destination": "/signet.html",
       "permanent": false
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "signetapp.cloud" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "signetapp.cloud"
+        }
+      ],
       "destination": "/signet.html",
       "permanent": false
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "www.signetapp.cloud" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.signetapp.cloud"
+        }
+      ],
       "destination": "/signet.html",
       "permanent": false
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "fisetech.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "fisetech.ai"
+        }
+      ],
       "destination": "/signet.html",
       "permanent": false
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "www.fisetech.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fisetech.ai"
+        }
+      ],
       "destination": "/signet.html",
       "permanent": false
     }
@@ -52,42 +136,82 @@
   "rewrites": [
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "signetapp.cloud" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "signetapp.cloud"
+        }
+      ],
       "destination": "/signet.html"
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "signetapp.cloud" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "signetapp.cloud"
+        }
+      ],
       "destination": "/signet.html"
     },
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "www.signetapp.cloud" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.signetapp.cloud"
+        }
+      ],
       "destination": "/signet.html"
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "www.signetapp.cloud" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.signetapp.cloud"
+        }
+      ],
       "destination": "/signet.html"
     },
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "fisetech.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "fisetech.ai"
+        }
+      ],
       "destination": "/signet.html"
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "fisetech.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "fisetech.ai"
+        }
+      ],
       "destination": "/signet.html"
     },
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "www.fisetech.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fisetech.ai"
+        }
+      ],
       "destination": "/signet.html"
     },
     {
       "source": "/index.html",
-      "has": [{ "type": "host", "value": "www.fisetech.ai" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fisetech.ai"
+        }
+      ],
       "destination": "/signet.html"
     }
   ]
