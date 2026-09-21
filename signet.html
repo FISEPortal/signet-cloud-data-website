@@ -5,77 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Signet: Identity and Policy Infrastructure for Neurodata</title>
 <meta name="description" content="Signet is the identity and policy layer for neurodata: user-controlled encryption keys, purpose-specific consent enforced per event, and cryptographic proof of authorization, for every party requesting access, human or autonomous.">
-<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    /* base palette, constant across themes */
-    --obsidian:#0B132B;
-    --obsidian-light:#1E293B;
-    --obsidian-dark:#070A14;
-    --cyan:#00E5FF;
-    --cyan-hover:#00B3CC;
+    /* FISE brand palette */
+    --obsidian:#0a0c22;
+    --obsidian-light:#14182e;
+    --obsidian-dark:#06081a;
+    --cyan:#2484C3;
+    --cyan-hover:#0866A2;
+    --cyan-light:#6BC9ED;
     --white:#FFFFFF;
+    --slate-blue:#6e8291;
+    --off-white:#f4fafa;
     --red:#EF4444;
     --emerald:#34D399;
     --amber:#FBBF24;
-    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-    --heading:'Plus Jakarta Sans','Inter',sans-serif;
+    --sans:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --heading:'Poppins',-apple-system,'Segoe UI',sans-serif;
     --mono:'JetBrains Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
 
     /* semantic theme tokens: dark mode (default) */
-    --bg:#0F1B3D;
-    --bg-elevated:#1B2E5C;
-    --bg-deep:#05060B;
+    --bg:#0a0c22;
+    --bg-elevated:#14182e;
+    --bg-deep:#06081a;
     --text:#FFFFFF;
-    --text-muted:#FFFFFF;
-    --border:#33468A;
-    --divider:#33468A;
-    --accent-text:#00E5FF;
-    --grad-start:#00E5FF;
-    --grad-end:#3B82F6;
-    --nav-bg:rgba(15,27,61,0.92);
-    --shadow:rgba(0,0,0,0.35);
+    --text-muted:#c7d6e2;
+    --border:#1e2a4a;
+    --divider:#1e2a4a;
+    --accent-text:#6BC9ED;
+    --grad-start:#6BC9ED;
+    --grad-end:#2484C3;
+    --nav-bg:rgba(10,12,34,0.92);
+    --shadow:rgba(0,0,0,0.45);
 
-    /* section hue variants, dark mode: bold and distinct, not near-black variants */
-    --navy-bg:#0F1B3D;
-    --navy-elevated:#1B2E5C;
-    --navy-border:#33468A;
-    --teal-bg:#0A4A4F;
-    --teal-elevated:#0F6169;
-    --teal-border:#1C8892;
-    --indigo-bg:#35125F;
-    --indigo-elevated:#4A1B82;
-    --indigo-border:#7A3AC9;
-    --deep-bg:#05060B;
+    /* section hue variants, dark mode: subtle depth in the FISE navy family */
+    --navy-bg:#0a0c22;
+    --navy-elevated:#14182e;
+    --navy-border:#1e2a4a;
+    --teal-bg:#0e1a38;
+    --teal-elevated:#17244a;
+    --teal-border:#2c3d6a;
+    --indigo-bg:#050d24;
+    --indigo-elevated:#0f1a3a;
+    --indigo-border:#1e2a4a;
+    --deep-bg:#06081a;
   }
   :root[data-theme="light"]{
     --bg:#FFFFFF;
-    --bg-elevated:#F1F5F9;
-    --bg-deep:#E6EDFC;
-    --text:#0B132B;
-    --text-muted:#334155;
-    --border:#CBD5E1;
-    --divider:#E2E8F0;
-    --accent-text:#0E7490;
-    --grad-start:#0891B2;
-    --grad-end:#1D4ED8;
-    --nav-bg:rgba(255,255,255,0.9);
-    --shadow:rgba(15,23,42,0.1);
+    --bg-elevated:#f4fafa;
+    --bg-deep:#e6f2fa;
+    --text:#0a0c22;
+    --text-muted:#6e8291;
+    --border:#cfdde6;
+    --divider:#e0ebf2;
+    --accent-text:#0866A2;
+    --grad-start:#2484C3;
+    --grad-end:#0866A2;
+    --nav-bg:rgba(255,255,255,0.92);
+    --shadow:rgba(10,12,34,0.10);
 
-    /* section hue variants, light mode: bold pastel washes, not off-white */
+    /* section hue variants, light mode: FISE off-white + faint blue washes */
     --navy-bg:#FFFFFF;
-    --navy-elevated:#F1F5F9;
-    --navy-border:#CBD5E1;
-    --teal-bg:#C8F3EF;
-    --teal-elevated:#A9E9E2;
-    --teal-border:#5FCFC3;
-    --indigo-bg:#E3D7FC;
-    --indigo-elevated:#D3C0FA;
-    --indigo-border:#A87BF0;
-    --deep-bg:#E6EDFC;
+    --navy-elevated:#f4fafa;
+    --navy-border:#cfdde6;
+    --teal-bg:#e6f2fa;
+    --teal-elevated:#d5e8f5;
+    --teal-border:#a9cee6;
+    --indigo-bg:#f4fafa;
+    --indigo-elevated:#e6f2fa;
+    --indigo-border:#cfdde6;
+    --deep-bg:#e6f2fa;
   }
   .section-navy{ --s-bg:var(--navy-bg); --s-elevated:var(--navy-elevated); --s-border:var(--navy-border); }
   .section-teal{ --s-bg:var(--teal-bg); --s-elevated:var(--teal-elevated); --s-border:var(--teal-border); }
@@ -98,7 +102,7 @@
   .wrap{ max-width:1180px; margin:0 auto; padding:0 24px; }
   @media (max-width:640px){ .wrap{ padding:0 20px; } }
 
-  .glow{ box-shadow:0 0 25px rgba(0,229,255,0.22); }
+  .glow{ box-shadow:0 0 25px rgba(36,132,195,0.30); }
   .grad-text{
     background:linear-gradient(135deg, var(--grad-start) 0%, var(--grad-end) 100%);
     -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; color:transparent;
@@ -110,17 +114,17 @@
   .btn{
     display:inline-flex; align-items:center; justify-content:center;
     font-family:var(--heading); font-weight:700; font-size:13px; letter-spacing:0.03em; text-transform:uppercase;
-    background:var(--cyan); color:var(--obsidian); text-decoration:none;
+    background:var(--cyan); color:#FFFFFF; text-decoration:none;
     padding:14px 26px; border-radius:8px; transition:background .15s ease, transform .15s ease;
   }
-  .btn:hover{ background:var(--cyan-hover); transform:translateY(-1px); }
+  .btn:hover{ background:var(--cyan-hover); color:#FFFFFF; transform:translateY(-1px); }
   .btn-ghost{
     display:inline-flex; align-items:center; justify-content:center;
     font-family:var(--sans); font-weight:500; font-size:14px;
     color:var(--text); text-decoration:none; border:1px solid var(--border);
     padding:13px 26px; border-radius:8px; transition:border-color .15s ease;
   }
-  .btn-ghost:hover{ border-color:rgba(0,229,255,0.5); }
+  .btn-ghost:hover{ border-color:rgba(36,132,195,0.6); }
   .highlight-yellow{
     border:2px solid #FACC15 !important;
     box-shadow:0 0 25px rgba(250,204,21,0.85) !important;
@@ -134,7 +138,7 @@
     width:40px; height:40px; display:inline-flex; align-items:center; justify-content:center;
     margin-right:14px; padding:0;
   }
-  .theme-toggle:hover{ border-color:rgba(0,229,255,0.5); }
+  .theme-toggle:hover{ border-color:rgba(36,132,195,0.6); }
   .theme-toggle svg{ width:18px; height:18px; }
   .theme-toggle .icon-moon{ display:none; }
   :root[data-theme="light"] .theme-toggle .icon-sun{ display:none; }
@@ -162,7 +166,7 @@
 
   .badge{
     display:inline-flex; align-items:center; gap:8px;
-    background:rgba(0,229,255,0.08); border:1px solid rgba(0,229,255,0.3);
+    background:rgba(36,132,195,0.12); border:1px solid rgba(36,132,195,0.4);
     border-radius:999px; padding:7px 14px 7px 12px; margin-bottom:22px;
   }
   .badge .dot{ width:7px; height:7px; border-radius:50%; background:var(--cyan); animation:pulse 2s ease-in-out infinite; }
@@ -272,8 +276,8 @@
       <div class="stat-item">
         <div class="sdot" style="background:var(--cyan)"></div>
         <div>
-          <span class="stitle">9+ Neurodata Bills</span>
-          <span class="scap">Introduced across state legislatures in the first six months of 2026 alone.</span>
+          <span class="stitle">11 State Bills &amp; Laws Introduced</span>
+          <span class="scap">5 enacted (CO, CA, CT, MT, VT); 6 more pending nationwide.</span>
         </div>
       </div>
       <div class="stat-item">
@@ -342,7 +346,7 @@
         <p class="lead">Today, the parties requesting access are human: researchers, scientists, biobanks. Autonomous systems are next, and the architecture doesn't have to change to accommodate them. The same keys. The same per-event policy. The same proof.</p>
       </div>
       <div class="cta-row" style="justify-content:flex-start;">
-        <a id="supportEmailBtn" class="btn glow" href="mailto:support@fise.tech">Email support@fise.tech</a>
+        <a id="supportEmailBtn" class="btn glow" href="mailto:support@fise.tech">support@fise.tech</a>
       </div>
     </div>
   </div>
