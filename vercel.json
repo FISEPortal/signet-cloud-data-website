@@ -1,6 +1,28 @@
 {
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "fisetech.ai"
+        }
+      ],
+      "destination": "https://fise.tech/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.fisetech.ai"
+        }
+      ],
+      "destination": "https://fise.tech/",
+      "permanent": true
+    },
+    {
       "source": "/team.html",
       "has": [
         {
@@ -67,28 +89,6 @@
       "permanent": false
     },
     {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "fisetech.ai"
-        }
-      ],
-      "destination": "/signet.html",
-      "permanent": false
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.fisetech.ai"
-        }
-      ],
-      "destination": "/signet.html",
-      "permanent": false
-    },
-    {
       "source": "/index.html",
       "has": [
         {
@@ -105,28 +105,6 @@
         {
           "type": "host",
           "value": "www.signetapp.cloud"
-        }
-      ],
-      "destination": "/signet.html",
-      "permanent": false
-    },
-    {
-      "source": "/index.html",
-      "has": [
-        {
-          "type": "host",
-          "value": "fisetech.ai"
-        }
-      ],
-      "destination": "/signet.html",
-      "permanent": false
-    },
-    {
-      "source": "/index.html",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.fisetech.ai"
         }
       ],
       "destination": "/signet.html",
@@ -170,46 +148,6 @@
         {
           "type": "host",
           "value": "www.signetapp.cloud"
-        }
-      ],
-      "destination": "/signet.html"
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "fisetech.ai"
-        }
-      ],
-      "destination": "/signet.html"
-    },
-    {
-      "source": "/index.html",
-      "has": [
-        {
-          "type": "host",
-          "value": "fisetech.ai"
-        }
-      ],
-      "destination": "/signet.html"
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.fisetech.ai"
-        }
-      ],
-      "destination": "/signet.html"
-    },
-    {
-      "source": "/index.html",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.fisetech.ai"
         }
       ],
       "destination": "/signet.html"
